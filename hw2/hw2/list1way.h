@@ -5,14 +5,16 @@
 class list1way
 {
 private:
+	//remove _current point
 	node* _current;
 	node* head;
+	//remove length
 	int length;
 public:
 
 	list1way()
 	{
-		cout << "Ðàáîòà êîíñòðóêòîðà" << endl;
+		cout << "ÃÃ Ã¡Ã®Ã²Ã  ÃªÃ®Ã­Ã±Ã²Ã°Ã³ÃªÃ²Ã®Ã°Ã " << endl;
 		_current = NULL;
 		head = NULL;		
 	}
@@ -40,7 +42,7 @@ public:
 			_current->next = temp;
 			temp->data = value;
 			temp->next = p;
-			cout << "Ýëåìåíò äîáàâëåí" << endl;
+			cout << "ÃÃ«Ã¥Ã¬Ã¥Ã­Ã² Ã¤Ã®Ã¡Ã Ã¢Ã«Ã¥Ã­" << endl;
 			length++;
 		}
 		
@@ -71,7 +73,7 @@ public:
 	{
 		if (_current->next == NULL)
 		{
-			cout << "Êîíåö ñïèñêà" << endl;
+			cout << "ÃŠÃ®Ã­Ã¥Ã¶ Ã±Ã¯Ã¨Ã±ÃªÃ " << endl;
 		}
 		else
 		{
@@ -82,7 +84,7 @@ public:
 
 	void ShowCurrent()
 	{
-		cout << "Òåêóùåå çíà÷åíèå ýëåìåíòà " << _current->data << endl;
+		cout << "Ã’Ã¥ÃªÃ³Ã¹Ã¥Ã¥ Ã§Ã­Ã Ã·Ã¥Ã­Ã¨Ã¥ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã  " << _current->data << endl;
 	}
 
 	void MoveToHead()
@@ -94,7 +96,7 @@ public:
 	{
 		node* temp;
 		temp = head;
-		cout << "Ïîëíûé ñïèñîê ";
+		cout << "ÃÃ®Ã«Ã­Ã»Ã© Ã±Ã¯Ã¨Ã±Ã®Ãª ";
 		for (int i = 0; i < length; i++)
 		{
 			cout << temp->data << " ";
@@ -123,12 +125,12 @@ public:
 
 	void ListLenthg()
 	{
-		cout << "Äëèíà ñïèñêà " << length << endl;
+		cout << "Ã„Ã«Ã¨Ã­Ã  Ã±Ã¯Ã¨Ã±ÃªÃ  " << length << endl;
 	}
 
 	~list1way()
 	{
-		cout << "Ðàáîòà äåñòðóêòîðà" << endl;
+		cout << "ÃÃ Ã¡Ã®Ã²Ã  Ã¤Ã¥Ã±Ã²Ã°Ã³ÃªÃ²Ã®Ã°Ã " << endl;
 		if (head!=NULL)
 		{
 			for (int i = 0; i < length; i++)
